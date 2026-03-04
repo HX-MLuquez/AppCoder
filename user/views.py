@@ -16,3 +16,9 @@ def probando_template(request):
         "notas": [10, 7, 3, 9],
     }
     return render(request, "user/probando.html", contexto)
+
+def test(request):
+    context = {
+        "title": "Test Page"
+    }
+    return render(request, "user/test.html", context)
